@@ -42,6 +42,49 @@
         </div>
       </nav>
 
-    <h1>CONTACT!</h1>
+      <section>
+        <div class="container">
+            <div class="container">
+                <h2>Si tu veux devenir un ouf comme nous, alors...</h2>
+                <div class="container">
+                    <img src="https://media.giphy.com/media/ZB8xJQqO4JZDmgVNsu/giphy.gif"> 
+                </div>
+                <strong>Contactez nous</strong><br><strong>Bureau:</strong> 123456789
+                <hr>
+            </div>
+            <div class="container">
+                <form  role="form" id="Formulaire" method="POST">
+                    <div class="form-group">
+                        <label class="control-label" for="Nombre">Nom et Prenom</label>
+                        <input type="text" class="form-control" id="Nom" name="Nom" placeholder="Nom et Prenom par ici" required autofocus />
+                    </div>            
+                    <div class="form-group">
+                        <label class="control-label" for="Motif">Motif du contact</label>
+                        <select name="Motif" class="form-control">
+                            <option value="Consultation general">Consultation general</option>
+                            <option value="inscription">S'inscrire à l'ecole</option>
+                            <option value="information de probleme">Information d'un probleme</option>
+                        </select>
+                    </div>
+                    </div>
+                    <div class="form-group">
+                        <label class="control-label" for="Email">Adresse mail</label>
+                        <input type="email" class="form-control" id="Email" name="Correo" placeholder="Adresse mail" required />
+                    </div>
+                    <div class="form-group">
+                        <label class="control-label" for="Mensaje">Message</label>
+                        <textarea rows="5" cols="30" class="form-control" id="Message" name="Message" placeholder="Ton message" required ></textarea>
+                    </div>
+                    <div class="form-group">                
+                        <input type="submit" class="btn btn-primary" value="Envoyer">
+                        <input type="reset" class="btn btn-default" value="Nettoyer">                
+                    </div>
+                    <div id="respuesta" style="display: none;"></div>
+                </form>
+            </div>       
+        </div>
+    </section>
+
+ 
 </body>
 </html>
