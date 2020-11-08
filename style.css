@@ -1,0 +1,26 @@
+section {
+    display: flex;
+    margin-top: 60px;
+    align-items: center;
+  }
+  
+  img{
+    display: flex;
+    align-items: center;
+    margin: auto;
+  }
+  
+  h2{
+    display: flex;
+   text-align: center;
+   justify-content: center;
+   
+  }
+  section {
+    background-color: rgb(133, 161, 152);
+  }
+
+  #map-container{
+    height: 500px;
+    width: 500px;
+}
