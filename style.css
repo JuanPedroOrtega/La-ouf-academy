@@ -1,5 +1,4 @@
 section {
-
   display: flex;
   margin-top: 60px;
   align-items: center;
@@ -19,6 +18,61 @@ h2{
 }
 section {
   background-color: rgb(133, 161, 152);
+}
+
+#map-container{
+  height: 500px;
+  width: 500px;
+}
+
+/* css en complément du bootstrap de la maquette PDF */
+
+@import url("https://use.typekit.net/auu0knl.css");
+
+
+/* barre de navigation */
+.fond_nav {
+background : #D95407;
+background : rgba(217, 84, 7, 1);
+}
+
+.fontMenu {
+font-family : Skolar Sans Latin Extended;
+font-weight : bold;
+font-size : 16px;
+}
+
+/* Caroussel */
+.carousselTitle
+{
+font-family : Skolar Sans Latin Extended;
+font-weight : bold;
+font-size : 40px;
+}
+
+.carouseelText
+{
+font-family : Skolar Sans Latin Condensed;
+font-size : 16px;
+}
+
+/* Témoignage */
+.fontTemoignage {
+background : #4BD4F2;
+position : absolute ;
+left : 0px;
+top : 547px;
+width : 1280px;
+height : 223px;
+}
+
+.temoignageText {
+font-family : Objektiv Mk3;
+font-size : 12px;
+color : #FFFFFF;
+}
+
+=======
 
     display: flex;
     margin-top: 60px;
