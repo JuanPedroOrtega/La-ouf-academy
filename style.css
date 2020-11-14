@@ -25,7 +25,6 @@ img{
 /* barre de navigation */
 .fond_nav {
 background: #D95407;
-background: rgba(217, 84, 7, 1);
 }
 
 .fontMenu {
@@ -40,6 +39,10 @@ h2 {
   display: flex;
   text-align: center;
   justify-content: center;
+  font-family: Skolar Sans Latin Extended;
+  font-weight: bold;
+  font-size: 30px;
+  color: #D95407;
  }
 
 .carousselTitle {
@@ -48,19 +51,11 @@ font-weight: bold;
 font-size: 40px;
 }
 
-
-.h3 {
-  font-family: Skolar Sans Latin Extended;
-  font-weight: bold;
-  font-size: 30px;
-  color: #D95407;
-}
-
-.temoignageTitle h3 {
+.temoignageTitle { /* couleur titre témoignage */
   color: #307CBF;
 }
 
-.Orange h3 {
+.Orange { /* couleur h2 */
   color: #D95407;
 }
 
@@ -71,7 +66,7 @@ font-size: 40px;
   color: #000000;
 }
 
-.colorWhite h4 {
+.colorWhite {
   color: #ffffff;;
 }
 
@@ -87,7 +82,7 @@ p {
   font-size: 12px;
 }
 
-.temoignageText p {
+.temoignageText {
   color: #FFFFFF;
   }
 
@@ -120,4 +115,33 @@ height: 223px;
 .footerText p {
   font-size: 9px;
   color: #FFFFFF;
+}
+
+
+/* section index.html */
+
+.sectVirtual {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.artTestimony {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  padding:0 40px 0 40px;
+}
+
+.artVirtual {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  margin:0 10px 0 10px;
+}
+
+.imgPortrait {
+  width : 291px;
+  height : auto;
+  padding:0 20px 0 0;
 }
