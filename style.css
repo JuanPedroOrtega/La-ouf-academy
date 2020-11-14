@@ -1,48 +1,118 @@
 section {
-
+  background-color: rgb(133, 161, 152);
   display: flex;
   margin-top: 60px;
   align-items: center;
 }
 
-img{
+img {
   display: flex;
   align-items: center;
   margin: auto;
 }
 
-h2{
-  display: flex;
- text-align: center;
- justify-content: center;
- 
+#map-container{
+  height: 500px;
+  width: 500px;
 }
-section {
-  background-color: rgb(133, 161, 152);
 
-    display: flex;
-    margin-top: 60px;
-    align-items: center;
-  }
-  
-  img{
-    display: flex;
-    align-items: center;
-    margin: auto;
-  }
-  
-  h2{
-    display: flex;
-   text-align: center;
-   justify-content: center;
-   
-  }
-  section {
-    background-color: rgb(133, 161, 152);
+
+/* css en complément du bootstrap de la maquette PDF */
+
+@import url("https://use.typekit.net/auu0knl.css");
+
+
+/* barre de navigation */
+.fond_nav {
+background: #D95407;
+}
+
+.fontMenu {
+font-family: Skolar Sans Latin Extended;
+font-weight: bold;
+font-size: 16px;
+}
+
+/* Titre */
+
+h2 {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  font-family: Skolar Sans Latin Extended;
+  font-weight: bold;
+  font-size: 30px;
+  color: #D95407;
+ }
+
+.carousselTitle {
+font-family: Skolar Sans Latin Extended;
+font-weight: bold;
+font-size: 40px;
+}
+
+.temoignageTitle { /* couleur titre témoignage */
+  color: #307CBF;
+}
+
+.Orange { /* couleur h2 */
+  color: #D95407;
+}
+
+.h4 {
+  font-family: Skolar Sans Latin Extended;
+  font-weight: bold;
+  font-size: 14px;
+  color: #000000;
+}
+
+.colorWhite {
+  color: #ffffff;;
+}
+
+/* Text */
+
+.carousselText {
+font-family: Skolar Sans Latin Condensed;
+font-size: 16px;
+}
+
+p {
+  font-family: Objektiv Mk3;
+  font-size: 12px;
+}
+
+.temoignageText {
+  color: #FFFFFF;
   }
 
-  #map-container{
-    height: 500px;
-    width: 500px;
+/* Témoignage */
+.temoignageBackground {
+background: #4BD4F2;
+position: absolute ;
+left: 0px;
+top: 547px;
+width: 1280px;
+height: 223px;
+}
 
+/* footer */
+
+.baseMention {
+  background: #4BD4F2;
+  position: absolute ;
+  left: 0px;
+  top: 2280px;
+  width: 1280px;
+  height: 50px;
+}
+
+.mention {
+  font-size: 10px;
+  color: #FFFFFF;
+}
+
+.footerText {
+  font-size: 9px;
+  color: #FFFFFF;
 }
