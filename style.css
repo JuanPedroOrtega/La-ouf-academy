@@ -23,15 +23,29 @@ img{
 
 
 /* barre de navigation */
-.fond_nav {
-background: #D95407;
-background: rgba(217, 84, 7, 1);
+#logo {
+  left: auto;
+  top: 0px;
+  width: 157px; 
+  height: 127px; 
+  position: absolute;
+  border: 3px solid #555; 
+  background: #4BD4F2;
+  -webkit-transform: skew(-25deg);
+  -moz-transform: skew(-25deg);
+  -ms-transform: skew(-25deg);
+  -o-transform: skew(-25deg);
+  transform: skew(-25deg);
 }
 
-.fontMenu {
+
+
+#navbar{
 font-family: Skolar Sans Latin Extended;
+color: white !important;
 font-weight: bold;
-font-size: 16px;
+font-size: 20px;
+background-color: #D95407 !important;
 }
 
 /* Titre */
