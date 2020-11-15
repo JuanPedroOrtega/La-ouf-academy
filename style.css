@@ -16,6 +16,9 @@ img {
   width: 500px;
 }
 
+#enConstruction { /*pour palier au souci de décalage sous la nav fixe */
+  padding-top: 70px;
+}
 
 /* css en complément du bootstrap de la maquette PDF */
 
