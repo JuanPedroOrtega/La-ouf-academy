@@ -1,9 +1,9 @@
-section {
+/*section {
   background-color: rgb(133, 161, 152);
   display: flex;
   margin-top: 60px;
   align-items: center;
-}
+} */
 
 img {
   display: flex;
@@ -16,6 +16,10 @@ img {
   width: 500px;
 }
 
+/*pour palier au souci de décalage sous la nav fixe */
+#enConstruction { 
+  padding-top: 70px;
+}
 
 /* css en complément du bootstrap de la maquette PDF */
 
@@ -23,7 +27,6 @@ img {
 
 
 /* barre de navigation */
-
 
 #logo {
   left: auto;
@@ -38,10 +41,7 @@ img {
   -ms-transform: skew(-25deg);
   -o-transform: skew(-25deg);
   transform: skew(-25deg);
-
 }
-
-
 
 #navbar{
 font-family: Skolar Sans Latin Extended;
