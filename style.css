@@ -28,20 +28,61 @@ img {
 
 /* barre de navigation */
 
+
+/*boutton de recherche*/
+
+.chercher {
+  position: absolute;
+  width: 40px;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  right: 0px;
+  transition: all .3s ease;
+  z-index: 100;
+}
+
+.chercher input {
+  height: 100%;
+  width: 100%;
+  padding:10px;
+  
+}
+
+.chercher span {
+  position: absolute;
+  right: 0px;
+  padding: 22px;
+  background: #D95407 ;
+}
+
+.chercher span img {
+  background: #D95407 ;
+  width: 18px
+}
+
+
+/*boutton de recherche*/
+
+
+
 #logo {
   left: auto;
   top: 0px;
-  width: 157px; 
-  height: 127px; 
+  width: 97px; 
+  height: 77px; 
   position: absolute;
-  border: 3px solid #555; 
   background: #4BD4F2;
   -webkit-transform: skew(-25deg);
   -moz-transform: skew(-25deg);
   -ms-transform: skew(-25deg);
   -o-transform: skew(-25deg);
   transform: skew(-25deg);
+
 }
+
+
 
 #navbar{
 font-family: Skolar Sans Latin Extended;
