@@ -1,284 +1,479 @@
 <!DOCTYPE html>
 <html lang="fr">
-  <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.5.4/umd/popper.min.js" integrity="sha512-7yA/d79yIhHPvcrSiB8S/7TyX0OxlccU8F/kuB8mHYjLlF1MInPbEohpoqfz0AILoq5hoD7lELZAYYHbyeEjag==" crossorigin="anonymous"></script>
-    <script src="https://code.jquery.com/jquery-3.5.1.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script> 
-    <link rel="icon" href="images/favicon.ico"/>
-  </head>
 
-  <body>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <nav class="navbar fixed-top navbar-expand-lg navbar-light bg-light" id="navbar">
-      <form class="form-inline"></form>
-      <a class="navbar-brand" href="index.html"><img src="media/logo_ouf.svg" alt="Logo" id="logo"></a>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav m-auto">
-          <li class="nav-item"> 
-            <a class="nav-link" href="index.html">La Ouf academy<span class="sr-only">(current)</span></a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="clase.html">La Classe virtuelle</a>
-          </li>
-          <li class="nav-item  active"><!--la class active fait que la lettre devient BOLD-->
-            <a class="nav-link" href="planing.html">
-            Planning type
-            </a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="contact.html" tabindex="-1" aria-disabled="true">Contact</a>
-          </li>
-        </ul>
-        <!--nouveau boutton de recherche-->
-        <div class="chercher">
-          <span id="chercher"><img src="http://svgshare.com/i/42h.svg">           
-           </span>
-          <input placeholder="Chercher" type="text" name="" value="">
-        </div>
+  <!-- CSS -->
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
+    integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+  <!-- jQuery and JS bundle w/ Popper.js -->
+
+  <link rel="stylesheet" href="style.css">
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx"
+    crossorigin="anonymous"></script>
+
+
+  <!--favicon-->
+  <link rel="icon" href="images/favicon.ico" />
+</head>
+
+<body>
+
+  <nav class="navbar fixed-top navbar-expand-lg navbar-light bg-light" id="navbar">
+    <form class="form-inline"></form>
+    <a class="navbar-brand" href="index.html"><img src="media/logo_ouf.svg" alt="Logo" id="logo"></a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+      aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav m-auto">
+        <li class="nav-item active">
+          <!--la class active fait que la lettre devient BOLD-->
+          <a class="nav-link fontMenu" href="index.html">La Ouf academy<span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link fontMenu" href="clase.html">La Classe virtuelle</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link fontMenu" href="planing.html">Planning type</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link fontMenu" href="contact.html" tabindex="-1" aria-disabled="true">Contact</a>
+        </li>
+      </ul>
+
+      <!--nouveau boutton de recherche-->
+      <div class="chercher">
+        <span id="chercher"><img src="http://svgshare.com/i/42h.svg"></span>
+        <input placeholder="Chercher" type="text" name="" value="">
+      </div>
+
       <!--ancienne barre de recherche-->
-        <!--<form class="form-inline my-2 my-lg-0">
+      <!--<form class="form-inline my-2 my-lg-0">
           <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
           <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
         </form>-->
-      </div>
+    </div>
   </nav>
-    <!-- présentation de la formation -->
-    <main>
-        <section class="sectDay">
-            <h1>Présentation de la journée de travail</h1>
-            <div class="divPlanning">
-                <img class="#" src="https://fakeimg.pl/450x600/" alt="planning journalier">
+
+
+  <!-- présentation de la formation -->
+
+  <main class="container">
+
+    <!-- présentation -->
+    <section class="divTop">
+      <div class="row">
+        <div class="col-12 col-md mr-2 mb-2">
+          <h2 class="left">Présentation de la journée de travail</h2>
+          <img class="#" src="https://fakeimg.pl/450x600/" alt="planning journalier">
+        </div>
+
+        <!-- partie formation -->
+        <div class="col-12 col-md">
+          <h3>Programme "Développeur Front-End"</h3>
+          <article class="sectCol">
+            <img class="imgFlex" src="https://fakeimg.pl/40/" alt="intitulé de la formation">
+            <div class="divCol">
+              <h6>Le métier de développeur Front-End</h6>
+              <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ea, expedita? Praesentium odit eligendi
+                sit.
+                Vero placeat minima numquam quisquam, corrupti facilis quas minus incidunt expedita nihil quibusdam
+                quod,
+                optio veritatis.</p>
             </div>
-            <article class="artProgram">
-                <h3>La formation</h3>
-                <article class="artFormation">
-                    <img class="#" src="https://fakeimg.pl/40/" alt="intitulé de la formation">
-                    <h4>Le métier de développeur Front-End</h4>
-                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ea, expedita? Praesentium odit eligendi sit. Vero placeat minima numquam quisquam, corrupti facilis quas minus incidunt expedita nihil quibusdam quod, optio veritatis.</p>
-                </article>
-                <article class="artFormation">
-                    <img class="#" src="https://fakeimg.pl/40/" alt="prérequis">
-                    <h4>Prérequis</h4>
-                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ea, expedita? Praesentium odit eligendi sit. Vero placeat minima numquam quisquam, corrupti facilis quas minus incidunt expedita nihil quibusdam quod, optio veritatis.</p>
-                </article>
-                <article class="artFormation">
-                    <img class="#" src="https://fakeimg.pl/40/" alt="durée de la formation">
-                    <h4>Durée de la formation</h4>
-                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ea, expedita? Praesentium odit eligendi sit. Vero placeat minima numquam quisquam, corrupti facilis quas minus incidunt expedita nihil quibusdam quod, optio veritatis.</p>
-                </article>
-                <div class="divDescription">
-                    <h4>Le programme</h4>
-                    <div class="divContenu">
-                        <ul>
-                            <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel sed numquam quam perspiciatis ex error provident iusto ab voluptate placeat? Repudiandae eius excepturi commodi, delectus deserunt sequi rerum repellat dolore.</li>
-                            <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel sed numquam quam perspiciatis ex error provident iusto ab voluptate placeat? Repudiandae eius excepturi commodi, delectus deserunt sequi rerum repellat dolore.</li>
-                            <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel sed numquam quam perspiciatis ex error provident iusto ab voluptate placeat? Repudiandae eius excepturi commodi, delectus deserunt sequi rerum repellat dolore.</li>
-                        </ul>
-                    </div>
-                </div>
-            </article>
-        </section>
-    </main>
+          </article>
+          <article class="sectCol">
+            <img class="imgFlex" src="https://fakeimg.pl/40/" alt="prérequis">
+            <div class="divCol">
+              <h6>Prérequis</h6>
+              <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ea, expedita? Praesentium odit eligendi
+                sit.
+                Vero placeat minima numquam quisquam, corrupti facilis quas minus incidunt expedita nihil quibusdam
+                quod,
+                optio veritatis.</p>
+            </div>
+          </article>
+          <article class="sectCol">
+            <img class="imgFlex" src="https://fakeimg.pl/40/" alt="durée de la formation">
+            <div class="divCol">
+              <h6>Durée de la formation</h6>
+              <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ea, expedita? Praesentium odit eligendi
+                sit.
+                Vero placeat minima numquam quisquam, corrupti facilis quas minus incidunt expedita nihil quibusdam
+                quod,
+                optio veritatis.</p>
+            </div>
+          </article>
+          <div class="mt-2">
+            <h6>Le programme</h6>
+            <ul>
+              <li class="textLi">Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel sed numquam quam
+                perspiciatis ex error
+                provident iusto ab voluptate placeat? Repudiandae eius excepturi commodi, delectus deserunt sequi
+                rerum repellat dolore.</li>
+              <li class="textLi">Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel sed numquam quam
+                perspiciatis ex error
+                provident iusto ab voluptate placeat? Repudiandae eius excepturi commodi, delectus deserunt sequi
+                rerum repellat dolore.</li>
+              <li class="textLi">Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel sed numquam quam
+                perspiciatis ex error
+                provident iusto ab voluptate placeat? Repudiandae eius excepturi commodi, delectus deserunt sequi
+                rerum repellat dolore.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
 
     <!-- AUTRE FORMATION-->
 
     <!-- programme data analyst-->
-    <section class="sectFormation">
-        <div class="divProgram">
-            <h2>Data Analyst</h2>
-            <article class="artFormation">
-                <img class="#" src="https://fakeimg.pl/40/" alt="intitulé de la formation">
-                <h4>Le métier de développeur Front-End</h4>
-                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ea, expedita? Praesentium odit eligendi sit. Vero placeat minima numquam quisquam, corrupti facilis quas minus incidunt expedita nihil quibusdam quod, optio veritatis.</p>
-            </article>
-            <article class="artFormation">
-                <img class="#" src="https://fakeimg.pl/40/" alt="prérequis">
-                <h4>Prérequis</h4>
-                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ea, expedita? Praesentium odit eligendi sit. Vero placeat minima numquam quisquam, corrupti facilis quas minus incidunt expedita nihil quibusdam quod, optio veritatis.</p>
-            </article>
-            <article class="artFormation">
-                <img class="#" src="https://fakeimg.pl/40/" alt="durée de la formation">
-                <h4>Durée de la formation</h4>
-                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ea, expedita? Praesentium odit eligendi sit. Vero placeat minima numquam quisquam, corrupti facilis quas minus incidunt expedita nihil quibusdam quod, optio veritatis.</p>
-            </article>
-        </div>
-        <div class="divDescription">
-            <h4>Le programme</h4>
-            <div class="divContenu">
-                <ul>
-                    <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel sed numquam quam perspiciatis ex error provident iusto ab voluptate placeat? Repudiandae eius excepturi commodi, delectus deserunt sequi rerum repellat dolore.</li>
-                    <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel sed numquam quam perspiciatis ex error provident iusto ab voluptate placeat? Repudiandae eius excepturi commodi, delectus deserunt sequi rerum repellat dolore.</li>
-                    <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel sed numquam quam perspiciatis ex error provident iusto ab voluptate placeat? Repudiandae eius excepturi commodi, delectus deserunt sequi rerum repellat dolore.</li>
-                </ul>
-            </div>
-        </div>
-    </section>
+    <div class="row mt-5">
+      <section class="col-12 col-md-6 mt-2">
 
-    <!-- programme Analyst sécurité-->
-    <section class="sectFormation">
-        <div class="divProgram">
-            <h2>Analyst Cyber-sécurité</h2>
-            <article class="artFormation">
-                <img class="#" src="https://fakeimg.pl/40/" alt="intitulé de la formation">
-                <h4>Le métier de développeur Front-End</h4>
-                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ea, expedita? Praesentium odit eligendi sit. Vero placeat minima numquam quisquam, corrupti facilis quas minus incidunt expedita nihil quibusdam quod, optio veritatis.</p>
-            </article>
-            <article class="artFormation">
-                <img class="#" src="https://fakeimg.pl/40/" alt="prérequis">
-                <h4>Prérequis</h4>
-                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ea, expedita? Praesentium odit eligendi sit. Vero placeat minima numquam quisquam, corrupti facilis quas minus incidunt expedita nihil quibusdam quod, optio veritatis.</p>
-            </article>
-            <article class="artFormation">
-                <img class="#" src="https://fakeimg.pl/40/" alt="durée de la formation">
-                <h4>Durée de la formation</h4>
-                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ea, expedita? Praesentium odit eligendi sit. Vero placeat minima numquam quisquam, corrupti facilis quas minus incidunt expedita nihil quibusdam quod, optio veritatis.</p>
-            </article>
-        </div>
-        <div class="divDescription">
-            <h4>Le programme</h4>
-            <div class="divContenu">
-                <ul>
-                    <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel sed numquam quam perspiciatis ex error provident iusto ab voluptate placeat? Repudiandae eius excepturi commodi, delectus deserunt sequi rerum repellat dolore.</li>
-                    <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel sed numquam quam perspiciatis ex error provident iusto ab voluptate placeat? Repudiandae eius excepturi commodi, delectus deserunt sequi rerum repellat dolore.</li>
-                    <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel sed numquam quam perspiciatis ex error provident iusto ab voluptate placeat? Repudiandae eius excepturi commodi, delectus deserunt sequi rerum repellat dolore.</li>
-                </ul>
-            </div>
-        </div>
-    </section>
+        <h3 class="Orange text-left">Programme "Data-Analyste"</h3>
 
-    <!-- programme Analyste business intelligence et data visualisation-->
-    <section class="sectFormation">
-        <div class="divProgram">
-            <h2>Analyste business intelligence et data visualisation</h2>
-            <article class="artFormation">
-                <img class="#" src="https://fakeimg.pl/40/" alt="intitulé de la formation">
-                <h4>Le métier de développeur Front-End</h4>
-                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ea, expedita? Praesentium odit eligendi sit. Vero placeat minima numquam quisquam, corrupti facilis quas minus incidunt expedita nihil quibusdam quod, optio veritatis.</p>
-            </article>
-            <article class="artFormation">
-                <img class="#" src="https://fakeimg.pl/40/" alt="prérequis">
-                <h4>Prérequis</h4>
-                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ea, expedita? Praesentium odit eligendi sit. Vero placeat minima numquam quisquam, corrupti facilis quas minus incidunt expedita nihil quibusdam quod, optio veritatis.</p>
-            </article>
-            <article class="artFormation">
-                <img class="#" src="https://fakeimg.pl/40/" alt="durée de la formation">
-                <h4>Durée de la formation</h4>
-                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ea, expedita? Praesentium odit eligendi sit. Vero placeat minima numquam quisquam, corrupti facilis quas minus incidunt expedita nihil quibusdam quod, optio veritatis.</p>
-            </article>
+        <article class="sectCol">
+          <img class="imgFlex" src="https://fakeimg.pl/40/" alt="intitulé de la formation">
+          <div class="divCol">
+            <h6>Le métier de développeur Front-End</h6>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ea, expedita? Praesentium odit eligendi sit.
+              Vero placeat minima numquam quisquam, corrupti facilis quas minus incidunt expedita nihil quibusdam
+              quod,
+              optio veritatis.</p>
+          </div>
+        </article>
+
+        <article class="sectCol">
+          <img class="imgFlex" src="https://fakeimg.pl/40/" alt="prérequis">
+          <div class="divCol">
+            <h6>Prérequis</h6>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ea, expedita? Praesentium odit eligendi sit.
+              Vero placeat minima numquam quisquam, corrupti facilis quas minus incidunt expedita nihil quibusdam
+              quod,
+              optio veritatis.</p>
+          </div>
+        </article>
+
+        <article class="sectCol">
+          <img class="imgFlex" src="https://fakeimg.pl/40/" alt="durée de la formation">
+          <div class="divCol">
+            <h6>Durée de la formation</h6>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ea, expedita? Praesentium odit eligendi sit.
+              Vero placeat minima numquam quisquam, corrupti facilis quas minus incidunt expedita nihil quibusdam
+              quod,
+              optio veritatis.</p>
+          </div>
+        </article>
+
+        <div class="mt-2">
+          <h6>Le programme</h6>
+          <ul>
+            <li class="textLi">Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel sed numquam quam
+              perspiciatis ex error
+              provident iusto ab voluptate placeat? Repudiandae eius excepturi commodi, delectus deserunt sequi
+              rerum repellat dolore.</li>
+            <li class="textLi">Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel sed numquam quam
+              perspiciatis ex error
+              provident iusto ab voluptate placeat? Repudiandae eius excepturi commodi, delectus deserunt sequi
+              rerum repellat dolore.</li>
+            <li class="textLi">Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel sed numquam quam
+              perspiciatis ex error
+              provident iusto ab voluptate placeat? Repudiandae eius excepturi commodi, delectus deserunt sequi
+              rerum repellat dolore.</li>
+          </ul>
         </div>
-        <div class="divDescription">
-            <h4>Le programme</h4>
-            <div class="divContenu">
-                <ul>
-                    <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel sed numquam quam perspiciatis ex error provident iusto ab voluptate placeat? Repudiandae eius excepturi commodi, delectus deserunt sequi rerum repellat dolore.</li>
-                    <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel sed numquam quam perspiciatis ex error provident iusto ab voluptate placeat? Repudiandae eius excepturi commodi, delectus deserunt sequi rerum repellat dolore.</li>
-                    <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel sed numquam quam perspiciatis ex error provident iusto ab voluptate placeat? Repudiandae eius excepturi commodi, delectus deserunt sequi rerum repellat dolore.</li>
-                </ul>
-            </div>
+      </section>
+
+      <!-- programme Analyst sécurité-->
+
+
+      <section class="col-12 col-md-6 mt-2">
+
+        <h3 class="Orange">Programme "Analyste Cyber-Sécurité"</h3>
+
+        <article class="sectCol">
+          <img class="imgFlex" src="https://fakeimg.pl/40/" alt="intitulé de la formation">
+          <div class="divCol">
+            <h6>Le métier de développeur Front-End</h6>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ea, expedita? Praesentium odit eligendi sit.
+              Vero placeat minima numquam quisquam, corrupti facilis quas minus incidunt expedita nihil quibusdam
+              quod,
+              optio veritatis.</p>
+          </div>
+        </article>
+
+        <article class="sectCol">
+          <img class="imgFlex" src="https://fakeimg.pl/40/" alt="prérequis">
+          <div class="divCol">
+            <h6>Prérequis</h6>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ea, expedita? Praesentium odit eligendi sit.
+              Vero placeat minima numquam quisquam, corrupti facilis quas minus incidunt expedita nihil quibusdam
+              quod,
+              optio veritatis.</p>
+          </div>
+        </article>
+
+        <article class="sectCol">
+          <img class="imgFlex" src="https://fakeimg.pl/40/" alt="durée de la formation">
+          <div class="divCol">
+            <h6>Durée de la formation</h6>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ea, expedita? Praesentium odit eligendi sit.
+              Vero placeat minima numquam quisquam, corrupti facilis quas minus incidunt expedita nihil quibusdam
+              quod,
+              optio veritatis.</p>
+          </div>
+        </article>
+
+        <div class="mt-2">
+          <h6>Le programme</h6>
+          <ul>
+            <li class="textLi">Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel sed numquam quam
+              perspiciatis ex error
+              provident iusto ab voluptate placeat? Repudiandae eius excepturi commodi, delectus deserunt sequi
+              rerum repellat dolore.</li>
+            <li class="textLi">Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel sed numquam quam
+              perspiciatis ex error
+              provident iusto ab voluptate placeat? Repudiandae eius excepturi commodi, delectus deserunt sequi
+              rerum repellat dolore.</li>
+            <li class="textLi">Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel sed numquam quam
+              perspiciatis ex error
+              provident iusto ab voluptate placeat? Repudiandae eius excepturi commodi, delectus deserunt sequi
+              rerum repellat dolore.</li>
+          </ul>
         </div>
-    </section>
-      
-    <!--Création du footer-->
-    <footer>
-        <!--Contenu du Footer-->
-        <div id="footer" class="footer-white bg-white py-5 px-3">
-          <div class="container">
-            <div class="row">
-              <!-- widget inscription à la newsletter-->
-                <div class="widget col-md-4">
-                  <h3 class="h5 widget-title border-bottom border-smooth">Inscription à la Newsletter</h3>
-                      <div class="thumbnail">
-                          <form action="" method="post">
-                              <div class="input-prepend"><span class="add-on"><i class="icon-envelope"></i></span>
-                                  <input type="text" id="" name="" placeholder="votre@email.com">
-                              </div>
-                              <br />
-                              <input type="submit" value="Inscription" class="btn-dark"/>
-                        </form>
-                      </div>    
+
+      </section>
+
+      <!-- programme Analyste business intelligence et data visualisation-->
+      <section class="col-12 col-md-6 mt-2">
+
+        <h3 class="Orange">Programme "Python"</h3>
+        <article class="sectCol">
+          <img class="imgFlex" src="https://fakeimg.pl/40/" alt="intitulé de la formation">
+          <div class="divCol">
+            <h6>Le métier de développeur Front-End</h6>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ea, expedita? Praesentium odit eligendi sit.
+              Vero placeat minima numquam quisquam, corrupti facilis quas minus incidunt expedita nihil quibusdam
+              quod,
+              optio veritatis.</p>
+          </div>
+        </article>
+        <article class="sectCol">
+          <img class="imgFlex" src="https://fakeimg.pl/40/" alt="prérequis">
+          <div class="divCol">
+            <h6>Prérequis</h6>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ea, expedita? Praesentium odit eligendi sit.
+              Vero placeat minima numquam quisquam, corrupti facilis quas minus incidunt expedita nihil quibusdam
+              quod,
+              optio veritatis.</p>
+          </div>
+        </article>
+        <article class="sectCol">
+          <img class="imgFlex" src="https://fakeimg.pl/40/" alt="durée de la formation">
+          <div class="divCol">
+            <h6>Durée de la formation</h6>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ea, expedita? Praesentium odit eligendi sit.
+              Vero placeat minima numquam quisquam, corrupti facilis quas minus incidunt expedita nihil quibusdam
+              quod,
+              optio veritatis.</p>
+          </div>
+        </article>
+        <div class="mt-2">
+          <h6>Le programme</h6>
+          <ul>
+            <li class="textLi">Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel sed numquam quam
+              perspiciatis ex error
+              provident iusto ab voluptate placeat? Repudiandae eius excepturi commodi, delectus deserunt sequi
+              rerum repellat dolore.</li>
+            <li class="textLi">Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel sed numquam quam
+              perspiciatis ex error
+              provident iusto ab voluptate placeat? Repudiandae eius excepturi commodi, delectus deserunt sequi
+              rerum repellat dolore.</li>
+            <li class="textLi">Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel sed numquam quam
+              perspiciatis ex error
+              provident iusto ab voluptate placeat? Repudiandae eius excepturi commodi, delectus deserunt sequi
+              rerum repellat dolore.</li>
+          </ul>
+        </div>
+
+      </section>
+
+      <!-- programme Analyste business intelligence et data visualisation-->
+      <section class="col-12 col-md-6 mt-2">
+
+        <h3 class="Orange">Programme "Développeur Back-end"</h3>
+        <article class="sectCol">
+          <img class="imgFlex" src="https://fakeimg.pl/40/" alt="intitulé de la formation">
+          <div class="divCol">
+            <h6>Le métier de développeur Front-End</h6>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ea, expedita? Praesentium odit eligendi sit.
+              Vero placeat minima numquam quisquam, corrupti facilis quas minus incidunt expedita nihil quibusdam
+              quod,
+              optio veritatis.</p>
+          </div>
+        </article>
+        <article class="sectCol">
+          <img class="imgFlex" src="https://fakeimg.pl/40/" alt="prérequis">
+          <div class="divCol">
+            <h6>Prérequis</h6>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ea, expedita? Praesentium odit eligendi sit.
+              Vero placeat minima numquam quisquam, corrupti facilis quas minus incidunt expedita nihil quibusdam
+              quod,
+              optio veritatis.</p>
+          </div>
+        </article>
+        <article class="sectCol">
+          <img class="imgFlex" src="https://fakeimg.pl/40/" alt="durée de la formation">
+          <div class="divCol">
+            <h6>Durée de la formation</h6>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ea, expedita? Praesentium odit eligendi sit.
+              Vero placeat minima numquam quisquam, corrupti facilis quas minus incidunt expedita nihil quibusdam
+              quod,
+              optio veritatis.</p>
+          </div>
+        </article>
+        <div class="mt-2">
+          <h6>Le programme</h6>
+          <ul>
+            <li class="textLi">Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel sed numquam quam
+              perspiciatis ex error
+              provident iusto ab voluptate placeat? Repudiandae eius excepturi commodi, delectus deserunt sequi
+              rerum repellat dolore.</li>
+            <li class="textLi">Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel sed numquam quam
+              perspiciatis ex error
+              provident iusto ab voluptate placeat? Repudiandae eius excepturi commodi, delectus deserunt sequi
+              rerum repellat dolore.</li>
+            <li class="textLi">Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel sed numquam quam
+              perspiciatis ex error
+              provident iusto ab voluptate placeat? Repudiandae eius excepturi commodi, delectus deserunt sequi
+              rerum repellat dolore.</li>
+          </ul>
+        </div>
+
+      </section>
+
+
+    </div>
+
+
+  </main>
+
+
+
+  <!--Création du footer-->
+  <footer class="mt-5">
+    <!--Contenu du Footer-->
+    <div class="py-5 px-3">
+      <div class="container">
+        <div class="row">
+          <!-- widget inscription à la newsletter-->
+          <div class="widget col-md-4">
+            <h5 class="widget-title border-bottom border-smooth">Inscription à la Newsletter</h5>
+            <div class="thumbnail">
+              <form action="" method="post">
+                <div class="input-prepend"><span class="add-on"><i class="icon-envelope"></i></span>
+                  <input type="text" id="" name="" placeholder="votre@email.com">
                 </div>
-              <!-- widget à propos de nous-->
-              <div class="widget col-md-4">
-                <h3 class="h5 widget-title border-bottom border-smooth">A propos de nous</h3>
-                <div class="widget-content">
-                  <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Facere eius cumque nesciunt deserunt dicta sint voluptates aspernatur illum quia possimus. Fugit modi explicabo saepe fuga laboriosam ipsam animi quas dolore!</p>
-                </div>
-              </div>
-            <!-- widget des liens vers les pages du site et les réseaux sociaux-->
-              <div class="widget col-md-4">
-                <h3 class="h5 widget-title border-bottom border-smooth">Liens sur le site</h3>
-                <div class="widget-content">
-                  <!-- widget des liens vers les pages du site-->
-                  <ul class="list-unstyled before-arrow">
-                    <li><a href="contact.html" title="renvoi vers la page des contacts">Contactez-nous</a></li>
-                    <li><a href="socialnetworks.html" title="renvoi vers la page de la foire aux questions">Social Networks</a></li>
-                    <li><a href="#Financement" title="renvoi vers les renseignements sur le financement">Financement</a></li>
-                    <li><a href="faq.html" title="renvoi vers la page de la foire aux questions">FAQ</a></li>
-                    <li><a href="terms.html" title="renvoi vers les termes et conditions d'utilisation du site">Termes &amp; Conditions</a></li>
-                  </ul>
-                </div>
-              </div>
+                <br />
+                <input type="submit" value="Inscription" class="btn-dark" />
+              </form>
             </div>
           </div>
-        </div>
-      
-        <!--copyright -->
-        
-          <div class="col-md-12 col-lg-12">
-            <div class="col-md-12 col-lg-12">
-              <div class="text-center text-md-left">© 2020 Copyright:<a href="index.html"> LA Ouf Accademy</a>
-              </div>
+          <!-- widget à propos de nous-->
+          <div class="widget col-md-4">
+            <h5 class="widget-title border-bottom border-smooth">A propos de nous</h5>
+            <div class="mt-3 widget-content footerText">
+              <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Facere eius cumque nesciunt deserunt dicta
+                sint voluptates aspernatur illum quia possimus. Fugit modi explicabo saepe fuga laboriosam ipsam animi
+                quas dolore!</p>
             </div>
-            <div class="text-center text-md-right">
-              <ul class="list-unstyled list-inline">
-                <li class="list-inline-item">
-                  <a href="https://twitter.com/?lang=fr" target="_blank">
-                    <img src="images/twitterIcon.png" title="la ouf accademy sur Twitter" height="20" width="20">
-                  </a>
+          </div>
+          <!-- widget des liens vers les pages du site et les réseaux sociaux-->
+          <div class="widget col-md-4">
+            <h5 class="widget-title border-bottom border-smooth">Liens sur le site</h5>
+            <div class="widget-content">
+              <!-- widget des liens vers les pages du site-->
+              <ul class="list-unstyled before-arrow">
+                <li><a href="contact.html" class="liText" title="renvoi vers la page des contacts">Contactez-nous</a>
                 </li>
-                <li class="list-inline-item">
-                  <a href="https://www.facebook.com/" target="_blank">
-                    <img src="images/facebookIcon.png" title="la ouf accademy sur Facebook" height="20" width="20">
-                  </a>
+                <li><a href="socialnetworks.html" class="liText"
+                    title="renvoi vers la page de la foire aux questions">Social Networks</a></li>
+                <li><a href="#Financement" class="liText"
+                    title="renvoi vers les renseignements sur le financement">Financement</a></li>
+                <li><a href="faq.html" class="liText" title="renvoi vers la page de la foire aux questions">FAQ</a>
                 </li>
-                <li class="list-inline-item">
-                  <a href="https://slack.com/intl/fr-fr" target="_blank">
-                    <img src="images/slackIcon.png" title="la ouf accademy sur slack" height="20" width="20">
-                  </a>
+                <li><a href="terms.html" class="liText"
+                    title="renvoi vers les termes et conditions d'utilisation du site">Termes &amp; Conditions</a>
                 </li>
               </ul>
             </div>
           </div>
-          
-    </footer>
+        </div>
+      </div>
+    </div>
 
-    <script>
+    <!--copyright -->
 
-      //script pour le boutton de recherche de la nav
-       var activo = false
-       $("#chercher").click(function() {
-         if (!activo) {
-           $(this).parent("div").css({
-             "width": "100%"
-           });
-           $(this).find("img").attr("src", "http://svgshare.com/i/44D.svg")
- 
-         } else {
-           $(this).parent("div").css({
-             "width": "40px"
-           });
-           $(this).find("img").attr("src", "http://svgshare.com/i/42h.svg")
-         }
-         activo = !activo
-       })
-     </script>
+    <div class="col-md-12 col-lg-12 copyrightColor">
+      <div class="col-md-12 col-lg-12">
+        <div class="text-center text-md-left">© 2020 Copyright:<a href="index.html"> LA Ouf Accademy</a>
+        </div>
+      </div>
+      <div class="text-center text-md-right">
+        <ul class="list-unstyled list-inline">
+          <li class="list-inline-item">
+            <a href="https://twitter.com/?lang=fr" target="_blank">
+              <img src="images/twitterIcon.png" title="la ouf accademy sur Twitter" height="20" width="20">
+            </a>
+          </li>
+          <li class="list-inline-item">
+            <a href="https://www.facebook.com/" target="_blank">
+              <img src="images/facebookIcon.png" title="la ouf accademy sur Facebook" height="20" width="20">
+            </a>
+          </li>
+          <li class="list-inline-item">
+            <a href="https://slack.com/intl/fr-fr" target="_blank">
+              <img src="images/slackIcon.png" title="la ouf accademy sur slack" height="20" width="20">
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
 
-  </body>
+  </footer>
+
+  <script>
+
+    //script pour le boutton de recherche de la nav
+    var activo = false
+    $("#chercher").click(function () {
+      if (!activo) {
+        $(this).parent("div").css({
+          "width": "100%"
+        });
+        $(this).find("img").attr("src", "http://svgshare.com/i/44D.svg")
+
+      } else {
+        $(this).parent("div").css({
+          "width": "40px"
+        });
+        $(this).find("img").attr("src", "http://svgshare.com/i/42h.svg")
+      }
+      activo = !activo
+    })
+  </script>
+
+</body>
+
 </html>
