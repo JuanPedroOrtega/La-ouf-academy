@@ -79,6 +79,11 @@ ul {
   padding-left: 15px;
 }
 
+.copyrighText {
+  font-size: 10px;
+  color: white;
+}
+
 /* section, article, div */
 
  section, img, p {
@@ -182,6 +187,11 @@ img {
 }
 
 
+#top {
+  padding-top: 0.2em;
+  padding-bottom: 0.1em;
+}
+
 
 
 /*  
@@ -267,11 +277,12 @@ boutton de recherche
 /* footer */
 
 footer {
-  background-color: #C8DAD2;
+  background-color: #51878f;
 }
 
 .copyrightColor {
-  background-color: #4BD4F2;
+  background-color: #06303b;
+  height: 100%;
 }
 
 .baseMention {
